@@ -168,8 +168,9 @@ const AcademicYears = () => {
 }
 
 const styles = {
-    page: { 
-  minHeight: '100vh', 
+   page: {
+  minHeight: '100vh',
+  width: '100%',
   backgroundColor: '#f7fafc',
   display: 'flex'
 },
