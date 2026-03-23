@@ -80,9 +80,19 @@ const StatCard = ({ label, value, color, icon }) => (
 )
 
 const styles = {
-  page: { minHeight: '100vh', backgroundColor: '#f7fafc' },
+  page: { 
+  minHeight: '100vh', 
+  backgroundColor: '#f7fafc',
+  display: 'flex'
+},
   loading: { display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' },
-  content: { padding: '2rem' },
+ content: { 
+  flex: 1,
+  padding: '2rem',
+  marginLeft: '240px',  // ← espace pour la sidebar
+  transition: 'margin-left 0.25s ease',
+  minWidth: 0
+},
   title: { fontSize: '1.8rem', fontWeight: '700', color: '#1a202c', marginBottom: '1.5rem' },
   cards: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem', marginBottom: '2rem' },
   card: { backgroundColor: '#fff', padding: '1.5rem', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', textAlign: 'center' },

@@ -175,8 +175,18 @@ const StatBox = ({ label, value, color, icon }) => (
 )
 
 const styles = {
-  page: { minHeight: '100vh', backgroundColor: '#f7fafc' },
-  content: { padding: '2rem' },
+    page: { 
+  minHeight: '100vh', 
+  backgroundColor: '#f7fafc',
+  display: 'flex'
+},
+  content: { 
+  flex: 1,
+  padding: '2rem',
+  marginLeft: '240px',  // ← espace pour la sidebar
+  transition: 'margin-left 0.25s ease',
+  minWidth: 0
+},
   title: { fontSize: '1.8rem', fontWeight: '700', color: '#1a202c', marginBottom: '1.5rem' },
   filterCard: { backgroundColor: '#fff', borderRadius: '10px', padding: '1.5rem', marginBottom: '1.5rem', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' },
   filterRow: { display: 'flex', gap: '1rem', alignItems: 'flex-end' },
